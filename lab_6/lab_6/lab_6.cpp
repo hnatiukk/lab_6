@@ -1,4 +1,6 @@
-﻿#include <windows.h>
+﻿//Створення структури студента та ініцалізація
+
+#include <windows.h>
 #include <iostream>
 #include <string>
 using namespace std;
