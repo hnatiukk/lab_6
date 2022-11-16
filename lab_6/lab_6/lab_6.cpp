@@ -15,11 +15,19 @@ int main()
         int id;
         int group;
         string name;
+        double averageMark;
     };
 
-    Student student{ 1, 1, "Олег" };
-    Student student1{ 2, 3, "Маркіянчик" };
+    Student student{ 1, 1, "Олег" , 0 };
+    Student student1{ 2, 3, "Маркіянчик", 0 };
 
-    cout << student.name << " навчається в групі " << student.group << endl;
-    cout << student1.name << " навчається в групі " << student1.group << endl;
+    cout << "Введіть середній бал студента " << student.name << ": ";
+    cin >> student.averageMark;
+
+    cout << "Введіть середній бал студента " << student1.name << ": ";
+    cin >> student1.averageMark;
+
+
+    cout << student.name << " навчається в групі " << student.averageMark << endl;
+    cout << student1.name << " навчається в групі " << student1.averageMark << endl;
 }
